@@ -1,0 +1,220 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+        }
+        .tab button:hover {
+            background-color: #ddd;
+        }
+        .tab button.active {
+            background-color: #ccc;
+        }
+        .tabcontent {
+            display: none;
+            padding: 20px;
+            border-top: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="tab">
+    <button class="tablinks" onclick="openPersona(event, 'persona1')">Persona 1</button>
+    <button class="tablinks" onclick="openPersona(event, 'persona2')">Persona 2</button>
+    <button class="tablinks" onclick="openPersona(event, 'persona3')">Persona 3</button>
+
+    <button class="tablinks" onclick="openPersona(event, 'scenario1')">Scenario 1</button>
+    <button class="tablinks" onclick="openPersona(event, 'scenario2')">Scenario 2</button>
+    <button class="tablinks" onclick="openPersona(event, 'scenario3')">Scenario 3</button>
+
+    <button class="tablinks" onclick="openPersona(event, 'storyboard')">Storyboard</button>
+    <button class="tablinks" onclick="openPersona(event, 'moodboard')">Moodboard</button>
+    <button class="tablinks" onclick="openPersona(event, 'flowchart')">Flowchart</button>
+    <button class="tablinks" onclick="openPersona(event, 'wireframe')">Wireframe</button>
+</div>
+
+<div id="persona1" class="tabcontent">
+    <img src="Jessica.jpg" style="max-width: 25%; float: right;">
+    <h2>Persona 1</h2>
+    <p><strong>Persona Type:</strong> 10th Grade Student</p>
+    <p><strong>Name:</strong> Jessica Park</p>
+    <p><strong>Age:</strong> 15</p>
+    <p><strong>Location:</strong> Miami, Florida</p>
+    <p><strong>Technical Comfort:</strong> Intermediate User</p>
+    <p><strong>Profession:</strong> Student</p>
+    <div style="margin-bottom: 3em;"></div>
+    <h2>Backstory:</h2>
+    <ol>
+        <li>Comes from a family of three and has 2 pets, both dogs.</li>
+        <li>Attends virtual school.</li>
+        <li>Volunteers for United Way Miami.</li>
+        <li>Favorite food is spaghetti.</li>
+        <li>Wants to attend culinary school to become a pastry chef.</li>
+    </ol>
+
+    <h2>Motivations:</h2>
+    <ol>
+        <li>She will be taking a family summer trip to Italy.</li>
+        <li>While in Italy, she and her family will eat at the famous Grotta Palazzese restaurant.</li>
+    </ol>
+
+    <h2>Frustrations:</h2>
+    <ol>
+        <li>Does not like spicy foods.</li>
+        <li>As the restaurant is very popular, there will be a long wait time, and she is impatient.</li>
+    </ol>
+
+    <h2>Ideal Experience:</h2>
+    <ol>
+        <li>Wants to try at least 20 different desserts while in Italy.</li>
+        <li>Would like to learn some new pastry recipes and try to make them for her family.</li>
+    </ol>
+</div>
+
+<div id="persona2" class="tabcontent">
+    <img src="James.jpg" style="max-width: 25%; float: right;">
+    <h2>Persona 2</h2>
+    <p><strong>Persona Type:</strong> Office Worker</p>
+    <p><strong>Name:</strong> James Green</p>
+    <p><strong>Age:</strong> 29</p>
+    <p><strong>Location:</strong> Houston, Texas</p>
+    <p><strong>Technical Comfort:</strong> Advanced User</p>
+    <p><strong>Profession:</strong> Works as an administrative assistant for a medical office</p>
+    <div style="margin-bottom: 3em;"></div>
+    <h2>Backstory:</h2>
+    <ol>
+        <li>Lives alone, not married or dating.</li>
+        <li>Started current job two weeks ago.</li>
+        <li>Likes going to live concerts and events.</li>
+        <li>Interested in fitness and health.</li>
+    </ol>
+
+    <h2>Motivations:</h2>
+    <ol>
+        <li>Wants to save money to buy a new car.</li>
+        <li>Enjoys relaxing by doing yoga in his free time.</li>
+        <li>Likes to participate in marathon swimming.</li>
+    </ol>
+
+    <h2>Frustrations:</h2>
+    <ol>
+        <li>Despite liking fitness, he does not enjoy hiking.</li>
+        <li>Not interested in participating in work related social activities.</li>
+    </ol>
+
+    <h2>Ideal Experience:</h2>
+    <ol>
+        <li>Placing first in the “Swim Miami” marathon swimming event.</li>
+        <li>Start a fitness YouTube channel.</li>
+    </ol>
+</div>
+
+<div id="persona3" class="tabcontent">
+    <img src="Margaret.jpg" style="max-width: 25%; float: right;">
+    <h2>Persona 3</h2>
+    <p><strong>Persona Type:</strong> Married Senior Citizen</p>
+    <p><strong>Name:</strong> Margaret Robinson<p>
+    <p><strong>Age:</strong> 72</p>
+    <p><strong>Location:</strong> Mount Vernon, Ohio</p>
+    <p><strong>Technical Comfort:</strong> Low Proficiency User</p>
+    <p><strong>Profession:</strong> Retired school bus<p>
+        <div style="margin-bottom: 3em;"></div>
+     <h2>Backstory:</h2>
+    <ol>
+        <li> Married to her husband for 50 years and has 4 adult children and 7 grandchildren.</li>
+        <li>Goes to her local YMCA every Thursday for a senior paint class.</li>
+        <li>Lives on a farm where she and her husband raise goats, cows, pigs and chickens.</li>
+        <li>Enjoys spending time with her children and grandchildren.</li>
+        <li>Likes to write mystery short stories in her free time.</li>
+    </ol>
+
+    <h2>Motivations:</h2>
+    <ol>
+        <li>Looking forward to her retirement party.</li>
+        <li>She enjoys tending to her vegetable garden. </li>
+        <li>Spending weekends selling eggs from her chickens at the town market.</li>
+    </ol>
+
+    <h2>Frustrations:</h2>
+    <ol>
+        <li>Prefers not to spend her free time staying indoors at home.</li>
+        <li>Finds social media apps and website challenging to use. </li>
+    </ol>
+
+    <h2>Ideal Experience:</h2>
+    <ol>
+        <li>Wants to get two of her short stories published as books this year.</li>
+        <li>Would like to give signed copies of her books to friends and family.</li>
+        <li>Take a retirement cruise trip to the Bahamas.</li>
+</div>
+
+<div id="scenario1" class="tabcontent">
+<h2>Scenario 1</h2>
+
+    <img src="Jessica scenario 1.jpg" style="max-width: 100%;">
+</div>
+
+<div id="scenario2" class="tabcontent">
+<h2>Scenario 2</h2>
+
+   <img src="James scenario 2.jpg" style="max-width: 100%;">
+</div>
+
+<div id="scenario3" class="tabcontent">
+<h2>Scenario 3</h2>
+
+    <img src="Margaret scenario 3.jpg" style="max-width: 100%;">
+</div>
+
+<div id="storyboard" class="tabcontent">
+</div>
+
+<div id="moodboard" class="tabcontent">
+<img src="Assignment 2 Moodboard.jpg" style="max-width: 100%;">    
+</div>
+
+<div id="flowchart" class="tabcontent">
+</div>
+
+<div id="wireframe" class="tabcontent">
+</div>    
+
+<script>
+    function openPersona(evt, personaName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(personaName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+</body>
+</html>
